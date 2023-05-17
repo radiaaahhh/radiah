@@ -1,5 +1,16 @@
 <template>
   <main>
+    <Head>
+      <Title>Radiah's Profile</Title>
+      <Link rel="icon" href="favicon.png" />
+      <Link rel="preconnect" href="https://fonts.googleapis.com" />
+      <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <Link
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap"
+        rel="stylesheet"
+      />
+    </Head>
+
     <img src="image01.jpg" alt="profile picture" />
     <h1>@radiaaahhh</h1>
     <div>
@@ -15,12 +26,22 @@
         buff gay men having a pose off. have fun guessing that nonsense
       </p>
     </div>
-    <NuxtLink to="https://twitter.com/radiaaahhh" target="_blank"
-      >Twitter</NuxtLink
+
+    <NuxtLink
+      to="https://twitter.com/radiaaahhh"
+      target="_blank"
+      class="button"
     >
-    <NuxtLink to="https://instagram.com/radiaaahhh" target="_blank"
-      >Instagram</NuxtLink
+      Twitter
+    </NuxtLink>
+
+    <NuxtLink
+      to="https://instagram.com/radiaaahhh"
+      target="_blank"
+      class="button"
     >
+      Instagram
+    </NuxtLink>
   </main>
 </template>
 
@@ -55,6 +76,15 @@ body::after {
 main {
   max-width: 500px;
   color: #fafafa;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
+.button {
+  display: block;
+  padding: 5px;
+  background: linear-gradient(to right, #730e2a, #005245);
+  margin-bottom: 7px;
+  color: #fafafa;
+  text-align: center;
+}
 </style>
